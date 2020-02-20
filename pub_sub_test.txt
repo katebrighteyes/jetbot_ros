@@ -1,0 +1,16 @@
+~/catkin_ws/src/
+
+catkin_create_pkg test_ros_topic std_msgs rospy
+
+
+# make file "topictest_pub.py" and type code and test.
+
+python topictest_pub.py 
+
+# make file "topictest_sub.py" and type code.
+
+python topictest_sub.py
+
+# make file "topic_test.launch" and type code.
+
+roslaunch test_ros_topic topic_test.launch
