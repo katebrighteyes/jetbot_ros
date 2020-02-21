@@ -2,7 +2,7 @@
 
 catkin_create_pkg test_ros_topic std_msgs rospy
 
-
+cd ~/catkin_ws/src/atkin_create_pkg/src
 # make file "topictest_pub.py" and type code and test.
 
 python topictest_pub.py 
@@ -10,6 +10,9 @@ python topictest_pub.py
 # make file "topictest_sub.py" and type code.
 
 python topictest_sub.py
+
+
+cd ~/catkin_ws/src/atkin_create_pkg/launch
 
 # make file "topic_test.launch" and type code.
 
