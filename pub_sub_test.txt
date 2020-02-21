@@ -9,9 +9,9 @@ cd ~/catkin_ws/src/atkin_create_pkg/src
 
 python test_pub_topic.py 
 
-# make file ".py" and type code.
+# make file "test_sub_topic.py" and type code.
 
-python test_sub_topictest_sub_topic.py
+python test_sub_topic.py
 
 
 cd ~/catkin_ws/src/atkin_create_pkg/launch
