@@ -111,51 +111,6 @@ $ rospack find jetbot_ros
 
 ===================================
 
-<< CAMERA TEST>>
-
-cd jetson-inference/utils/camera/
-
-gedit gstCamera.cpp
-comment 139, 140, 141 line
-
-~/jetson-inference/build
-
-make
-sudo make install
-
-
--------------------------------------
-##[TEST]
-
-#1) EXECUTE roscore
-
-##창을 새로 띄운 후 roscore 실행
-
-roscore
-
-#2) camera
-rosrun jetbot_ros jetbot_camera
-
-#3)view
-sudo apt-get install ros-melodic-image-view
-
-rosrun image_view image_view image:=/jetbot_camera/raw
-
-========================================
-
-$ sudo apt-get install python-pip3
-
-# install Adafruit libraries
-$ pip3 install Adafruit-MotorHAT
-$ pip3 install Adafruit-SSD1306
-
-=============================
-git clone https://github.com/JinFree/Jetson_Basic
-
-cd Jetson_Basic
-
-./basic_setup_for_nano.sh 
-python onboard_cam.py 
 
 
 
