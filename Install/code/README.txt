@@ -20,5 +20,9 @@ def preprocess(camera_value):
     return x
 	
   <<colision avoid test>>
-
+    if prob_blocked < 0.5:
+        set_speed(motor_left_ID,   0.5)
+        set_speed(motor_right_ID,  0.5)
+    else :
+        all_stop()
 
