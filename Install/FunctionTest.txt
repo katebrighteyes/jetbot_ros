@@ -57,19 +57,16 @@ sudo apt-get install ros-melodic-image-view
 rosrun image_view image_view image:=/jetbot_camera/raw
 
 ========================================
+<< Deep Learning Test 1 >>
 
-<< Motor TEST>>
+$ roscore
 
-$ sudo apt-get install python-pip3
+$  roslaunch ros_deep_learning imagenet.ros1.launch input:=csi://0 output:=display://0
 
-# install Adafruit libraries
-$ pip3 install Adafruit-MotorHAT
-$ pip3 install Adafruit-SSD1306
+<< Deep Learning Test 2 >>
 
-=============================
-git clone https://github.com/JinFree/Jetson_Basic
+$ roscore
 
-cd Jetson_Basic
+$ roslaunch ros_deep_learning detectnet.ros1.launch input:=csi://0 output:=display://0
+========================================
 
-./basic_setup_for_nano.sh 
-python onboard_cam.py 
