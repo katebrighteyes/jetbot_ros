@@ -74,7 +74,7 @@ sudo sh -c 'echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc'
 sudo apt-get install git cmake
 
 # clone the repo and submodules
-cd ~/workspace
+
 git clone https://github.com/dusty-nv/jetson-inference
 cd jetson-inference
 git submodule update --init
