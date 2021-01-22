@@ -1,6 +1,6 @@
 << Motor TEST>>
 
-$ sudo apt-get install python-pip3
+$ sudo apt-get install python3-pip
 
 # install Adafruit libraries
 $ pip3 install Adafruit-MotorHAT
