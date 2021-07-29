@@ -3,7 +3,8 @@
 catkin_create_pkg test_ros_topic std_msgs rospy
 
 
-cd ~/catkin_ws/src/atkin_create_pkg/src
+cd ~/catkin_ws/src/test_ros_topic/src
+
 
 # make file "test_pub_topic.py" and type code and test.
 
