@@ -6,11 +6,15 @@ cd ..
 
 catkin_make
 
+roscore 
+
+-------------------------
+
+# make file "test_pub_topic.py" and type code and test. 
+
+(다른 터미널)
 
 cd ~/catkin_ws/src/test_ros_topic/src
-
-
-# make file "test_pub_topic.py" and type code and test.
 
 gedit test_pub_topic.py 
 
@@ -20,7 +24,13 @@ gedit test_pub_topic.py
 
 python test_pub_topic.py 
 
+---------------------------------
+
 # make file "test_sub_topic.py" and type code.
+
+ (다른 터미널)
+
+cd ~/catkin_ws/src/test_ros_topic/src
 
 gedit test_sub_topic.py 
 
@@ -30,8 +40,16 @@ gedit test_sub_topic.py
 
 python test_sub_topic.py
 
+rqt_graph
 
-cd ~/catkin_ws/src/atkin_create_pkg/launch
+-------------------------------------------
+(모두 중지하고 터미널을 모두 끄고 다시 다른 창)
+
+cd ~/catkin_ws/src/test_ros_topic/
+
+mkdir launch
+
+cd launch
 
 # make file "topic_test.launch" and type code.
 
@@ -42,3 +60,5 @@ gedit topic_test.launch
 # 실행
 
 roslaunch test_ros_topic topic_test.launch
+
+rqt_graph
