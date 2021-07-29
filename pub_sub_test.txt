@@ -45,6 +45,12 @@ python test_sub_topic.py
 rqt_graph
 
 -------------------------------------------
+(중지하고 권한 설정)
+
+cd ~/catkin_ws/src/test_ros_topic/src
+
+chmod 777 *
+
 (모두 중지하고 터미널을 모두 끄고 다시 다른 창)
 
 cd ~/catkin_ws/src/test_ros_topic/
@@ -58,6 +64,10 @@ cd launch
 gedit topic_test.launch
 
 -> git 허브 파일을 복사해서 작성하세요
+
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+
+source ~/.bashrc
 
 # 실행
 
