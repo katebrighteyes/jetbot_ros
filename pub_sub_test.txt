@@ -40,6 +40,8 @@ gedit test_sub_topic.py
 
 python test_sub_topic.py
 
+ (다른 터미널)
+ 
 rqt_graph
 
 -------------------------------------------
@@ -61,4 +63,6 @@ gedit topic_test.launch
 
 roslaunch test_ros_topic topic_test.launch
 
+ (다른 터미널)
+ 
 rqt_graph
