@@ -78,6 +78,15 @@ $ rospack find jetbot_ros
 
 ---------------------------------
 
+* jetsos ros test
+
+roslaunch ros_deep_learning video_viewer.ros1.launch input:=csi://0 output:=display://0
+
+roslaunch ros_deep_learning imagenet.ros1.launch input:=csi://0 output:=display://0
+
+roslaunch ros_deep_learning detectnet.ros1.launch input:=csi://0 output:=display://0
+
+
 5. Testing JetBot
 Next, let's check that the different components of the robot are working under ROS.
 
