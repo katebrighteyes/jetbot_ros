@@ -44,6 +44,7 @@ make
 
 # install libraries
 sudo make install
+sudo ldconfig
 
 ----------------------------
 3. jetbot ros_deep_learning
