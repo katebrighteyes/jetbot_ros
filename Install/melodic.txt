@@ -87,6 +87,10 @@ make
 
 # install libraries
 sudo make install
+ldconfig
+
+# test
+detectnet csi://0
 
 ======================================
 
