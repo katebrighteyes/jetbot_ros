@@ -9,5 +9,8 @@
     <param name="io_method" value="mmap"/>
   </node>
   
+  2)
   
+rospy.init_node('Camera_sub_node')
+rospy.Subscriber("/usb_cam/image_raw/", Image, img_callback)
   
