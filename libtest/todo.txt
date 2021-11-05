@@ -1,0 +1,22 @@
+1.
+
+pipeline.start(config)
+
+2.
+
+depth = frames.get_depth_frame()
+
+
+-----------------------------
+1.
+pipeline = rs.pipeline()
+config = rs.config()
+
+
+2.
+
+pipeline.start(config)
+
+3.
+        depth_frame = frames.get_depth_frame()
+        color_frame = frames.get_color_frame()
