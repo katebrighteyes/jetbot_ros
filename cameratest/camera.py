@@ -15,8 +15,7 @@ def img_callback(img_data):
   cv_image = bridge.imgmsg_to_cv2(img_data, "bgr8")
 
 #TODO 3
-rospy.init_node('Camera_sub_node')
-rospy.Subscriber("/usb_cam/image_raw/", Image, img_callback)
+
 
 time.sleep(1.5)
 
