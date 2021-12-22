@@ -1,0 +1,92 @@
+~/catkin_ws/src/
+
+catkin_create_pkg test_ros_service std_msgs rospy
+
+cd ..
+
+catkin_make
+
+------------------------
+cd ~/catkin_ws/src/test_ros_service/src
+
+mkdir srv
+
+cd srv
+
+gedit WordCount.srv
+
+-----------------------
+roscore 
+
+-------------------------
+
+# make file "test_pub_topic.py" and type code and test. 
+
+(다른 터미널)
+
+cd ~/catkin_ws/src/test_ros_topic/src
+
+gedit test_pub_topic.py 
+
+-> git 허브 파일을 복사해서 작성하세요
+
+# 실행
+
+python test_pub_topic.py 
+or
+rosrun ros_topic_test test_pub_topic.py
+
+---------------------------------
+
+# make file "test_sub_topic.py" and type code.
+
+ (다른 터미널)
+
+cd ~/catkin_ws/src/test_ros_topic/src
+
+gedit test_sub_topic.py 
+
+-> git 허브 파일을 복사해서 작성하세요
+
+# 실행
+
+python test_sub_topic.py
+or
+rosrun ros_topic_test test_sub_topic.py
+
+ (다른 터미널)
+ 
+rqt_graph
+
+-------------------------------------------
+(중지하고 권한 설정)
+
+cd ~/catkin_ws/src/test_ros_topic/src
+
+chmod 777 *
+
+(모두 중지하고 터미널을 모두 끄고 다시 다른 창)
+
+cd ~/catkin_ws/src/test_ros_topic/
+
+mkdir launch
+
+cd launch
+
+# make file "topic_test.launch" and type code.
+
+gedit topic_test.launch
+
+-> git 허브 파일을 복사해서 작성하세요
+
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+
+source ~/.bashrc
+
+# 실행
+
+roslaunch test_ros_topic topic_test.launch
+
+ (다른 터미널)
+ 
+rqt_graph
