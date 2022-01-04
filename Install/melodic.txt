@@ -1,4 +1,6 @@
-# Install ROS Melodic
+# Install ROS Melodic for jetpack 4.5
+
+# If you install melodic already, go to # Install Adafruit Libraries
 
 sudo apt update
 
@@ -40,7 +42,7 @@ rosrun turtlesim turtlesim_node
 
 rosrun turtlesim turtle_teleop_key
 
-======================================
+=======================================================================
 
 #  Install Adafruit Libraries
 
@@ -76,7 +78,11 @@ sudo apt-get install git cmake
 # clone the repo and submodules
 
 git clone https://github.com/dusty-nv/jetson-inference
+
 cd jetson-inference
+
+git checkout 19ed62150b3e9499bad2ed6be1960dd38002bb7d
+
 git submodule update --init
 
 # build from source
@@ -87,7 +93,10 @@ make
 
 # install libraries
 sudo make install
-ldconfig
+sudo ldconfig
+
+OR
+make ; sudo make install; sudo ldconfig
 
 # test
 detectnet csi://0
@@ -106,16 +115,18 @@ git clone https://github.com/dusty-nv/ros_deep_learning
 $ cd ~/catkin_ws/src
 $ git clone https://github.com/dusty-nv/jetbot_ros
 
+cd jetbot_ros
+
+git checkout 179bdaa3614123b7f08dcfafe6bc5367bbbf058b
+
 # build the package
-$ cd ../    
+$ cd ~/catkin_ws
 $ catkin_make
 
 # confirm that jetbot_ros package can be found
 $ rospack find jetbot_ros
 
 ===================================
-
-
 
 
 
