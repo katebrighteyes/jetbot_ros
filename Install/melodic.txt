@@ -42,21 +42,8 @@ rosrun turtlesim turtlesim_node
 
 rosrun turtlesim turtle_teleop_key
 
-=======================================================================
-
-#  Install Adafruit Libraries
-
-$ sudo apt-get install python-pip
-
-# install Adafruit libraries
-$ pip install Adafruit-MotorHAT
-$ pip install Adafruit-SSD1306
-
-$ sudo usermod -aG i2c $USER
-
-======================================
-
-# #workspace 만들기
+===========================================
+##workspace 만들기
 
 wget https://raw.githubusercontent.com/katebrighteyes/jetson_ros_melodic/master/install_catkinws.sh
 
@@ -69,6 +56,28 @@ chmod 777 install_catkinws.sh
 ls ~/catkin_ws
 
 sudo sh -c 'echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc'
+
+패지키 만들기 시작
+cd ~/catkin_ws/src
+
+catkin_create_pkg ros_topic_test std_msgs rospy
+
+cd ..
+
+catkin_make
+
+=======================================================================
+
+#  Install Adafruit Libraries
+
+$ sudo apt-get install python-pip
+
+# install Adafruit libraries
+$ pip install Adafruit-MotorHAT
+$ pip install Adafruit-SSD1306
+
+$ sudo usermod -aG i2c $USER
+
 
 ======================================
 
